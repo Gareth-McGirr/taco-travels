@@ -28,23 +28,27 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
     * Information about 'Taco' and the websites purpose including an image of 'Taco' on his travels.
     * This information lets the user know what the site is about. 
 
-* Information on Clubs and Charities that 'Taco' is involved with 
-    * Information on the Hair O' The Dog Mcc Club and Bloodbikes Northwest.
-    * This information will relate to the Motorcycle Clubb that 'Taco' is a member of and information on BloodBikes charity which 'Taco' promotes as a previous Bloodbike rider.
-
-### Gallery Page
-* Gallery
-    * The gallery will provide the user with photos of 'Taco's Motorcycle adventures from various trips and charity events. The gallery will be fully responsive on all devices and allows the user to filter by categories provided in a sub navigation.
-    * This will allow users that are interested in 'Taco's Travels to filter items based on the category they wish to be displayed. As the gallery is responsive it will allow the user to view content from any device. 
-
-### Contact Page
 * Contact form
     * A contact form will be implemented to allow users to contact 'Taco'. The form will consist of the following fields and attributes: 
         * Full Name (required, max length 50, type=text)
         * Email (required, type=email)
         * Phone number (optional, type=tel) 
         * Message (required, type=textarea)
-    * This will allow user to contact 'Taco' if they have any queiries about travel destinations, charity events, club information or maybe to join him on some of his travels.  
+    * This will allow user to contact 'Taco' if they have any queiries about travel destinations, charity events, club information or maybe to join him on some of his travels. 
+
+### Gallery Page
+* Gallery
+    * The gallery will provide the user with photos of 'Taco's Motorcycle adventures from various trips and charity events. The gallery will be fully responsive on all devices and allows the user to filter by categories provided in a sub navigation.
+    * This will allow users that are interested in 'Taco's Travels to filter items based on the category they wish to be displayed. As the gallery is responsive it will allow the user to view content from any device. 
+
+### Adventures
+* Adventure Summary
+    * Sections containing 2 photos of the trip, a paragraph about the trip and a link to the gallery page to see more photos. 
+    * the sections will give the user an overview of the adventures that Taco has been on and the links will take the user to the gallery page where the user can view all the pictures that have been uplaoded for that trip. 
+* More details dropdown
+    * Hidden sections at the end of each Adventure Summary that will show a more detailed description of the trip which may include more details about longer trips and information about places visited along the way. 
+    * These section will be hidden by default so that user can only see the summaries on the page when loaded but the user will have ability with this feature to click and view more details at the end of the summary. This will allow user to easily scroll through the page and only view details of trips that they want to read more about. 
+
 
 ### Existing Features
 
