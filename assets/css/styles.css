@@ -1,0 +1,43 @@
+
+
+header{
+    display: grid;
+    grid-template-columns: (1fr, 1fr, 2fr);
+    width: 100%;
+
+    background-color: rgb(236, 234, 234);
+    
+    margin: 0 auto 20px auto;
+    
+    min-height: 50px;
+    
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px;
+}
+
+#logo{
+    grid-column: 1/3;
+    padding-left: 20px;
+    font-size: 2rem;
+}
+
+nav {
+    text-align: right;
+    grid-column: 3/3;
+}
+
+nav li{
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: color .5s;
+}
+a{
+    text-decoration: none;
+}
+
+
