@@ -44,7 +44,7 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
 ### Adventures
 * Adventure Summary
     * Sections containing 2 photos of the trip, a paragraph about the trip and a link to the gallery page to see more photos. 
-    * the sections will give the user an overview of the adventures that Taco has been on and the links will take the user to the gallery page where the user can view all the pictures that have been uplaoded for that trip. 
+    * The sections will give the user an overview of the adventures that Taco has been on and the links will take the user to the gallery page where the user can view all the pictures that have been uplaoded for that trip. 
 * More details dropdown
     * Hidden sections at the end of each Adventure Summary that will show a more detailed description of the trip which may include more details about longer trips and information about places visited along the way. 
     * These section will be hidden by default so that user can only see the summaries on the page when loaded but the user will have ability with this feature to click and view more details at the end of the summary. This will allow user to easily scroll through the page and only view details of trips that they want to read more about. 
