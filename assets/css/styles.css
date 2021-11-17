@@ -1,18 +1,49 @@
-
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
+}
 
 header{
+    
     display: grid;
-    grid-template-columns: (1fr, 1fr, 2fr);
+    grid-template-columns: 1fr 1fr 2fr;
     width: 100%;
-
     background-color: rgb(236, 234, 234);
-    
     margin: 0 auto 20px auto;
-    
-    min-height: 50px;
-    
+    max-height: 100px;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
+}
+
+#bio{
+    
+    height: auto;
+    border-style: solid;
+}
+#contact-form{
+    
+    min-height: 100px;
+    border-style: solid;
+}
+
+footer{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    background-color: rgb(236, 234, 234);
+}
+
+#contact-info{
+    grid-column: 1/2;
+}
+#social-media{
+    grid-column: 3/4;
 }
 
 #logo{
@@ -39,5 +70,6 @@ nav li{
 a{
     text-decoration: none;
 }
+
 
 
