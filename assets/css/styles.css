@@ -1,6 +1,10 @@
 html{
     height: 100%;
 }
+ul{
+    list-style: none; 
+    padding: 0;
+}
 body{
     min-height: 100%;
     display: grid;
@@ -12,12 +16,16 @@ header{
     
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 95%;
+    width: 100%;
     background-color: #343232;
     margin: 0 auto 20px auto;
     max-height: 150px;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 #bio{
@@ -32,30 +40,55 @@ header{
 }
 
 footer{
-    grid-row-start: 4;
-    grid-row-end: 5;
-    display: grid;
-    grid-template-columns: 1fr 1fr 3fr;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(236, 234, 234);
-    max-height: 150px;
-   
+    background-color: #343232;
+    color: white;
+    background-color: #343232;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px;
 }
-
 
 .contact-info{
-    grid-column: 1/2;
+    width: 100%;
+    align-content: center;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: #f59f61;
+}
+.contact-info a:hover{
+    font-size: 120%;
 }
 .social-media{
-    grid-column: 3/4;
-    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    width: 100%;
+    justify-content: center;
+    
 }
+.social-media i{
+    color: white;
+    
+}
+.social-media i:hover{
+    color: #f59f61;
+}
+
 .social-media li{
     display: inline;
 }
+
+
+
 .social-media i{
     font-size: 180%;
     margin:  1% 2%;
-    padding: 0 5%;
+    padding: 0 2%;  
 }
 
 #logo{
@@ -96,12 +129,24 @@ nav ul{
 }
 .active{
     color: #f59f61;
-    /* text-decoration: underline; */
     font-weight: 700;
 }
 nav a:hover{
     font-size: 120%;
 }
 
-
-
+@media only screen and (min-width: 800px) {
+    footer {
+        flex-direction: row;
+        max-height: 120px;
+    }
+    .social-media {
+        width: 40%;
+        
+    }
+    .contact-info {
+        width: 60%;
+        text-align: left;
+        padding: 2%;
+    }
+}
