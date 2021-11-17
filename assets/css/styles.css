@@ -1,17 +1,24 @@
+/* Generic Styles */
 html{
     height: 100%;
 }
+
 ul{
     list-style: none; 
     padding: 0;
 }
+
 body{
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    
 }
 
+.text-center {
+    text-align: center;
+}
+
+/* Header, Logo and Nav Styling*/
 header{
     
     display: grid;
@@ -24,80 +31,10 @@ header{
     box-shadow: 3px 3px 5px;
 }
 
-.text-center {
-    text-align: center;
-}
-
-#bio{
-    
-    height: auto;
-    border-style: solid;
-}
-#contact-form{
-    
-    min-height: 100px;
-    border-style: solid;
-}
-
-footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(236, 234, 234);
-    background-color: #343232;
-    color: white;
-    background-color: #343232;
-    margin: 0 auto 20px auto;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px;
-}
-
-.contact-info{
-    width: 100%;
-    align-content: center;
-}
-
-.contact-info a{
-    text-decoration: none;
-    color: #f59f61;
-}
-.contact-info a:hover{
-    font-size: 120%;
-}
-.social-media{
-    font-size: large;
-    font-weight: 700;
-    width: 100%;
-    justify-content: center;
-    
-}
-.social-media i{
-    color: white;
-    
-}
-.social-media i:hover{
-    color: #f59f61;
-}
-
-.social-media li{
-    display: inline;
-}
-
-
-
-.social-media i{
-    font-size: 180%;
-    margin:  1% 2%;
-    padding: 0 2%;  
-}
-
 #logo{
     grid-column: 1/2;
     padding-left: 20px;
     max-height: 150px;
-    /* font-size: 2rem;
-    color: #f59f61;
-    font-weight: 600; */
 }
 
 nav {
@@ -120,21 +57,91 @@ nav li{
     cursor: pointer;
     transition: color .5s;
 }
+
 nav a{
     text-decoration: none;
     color: white;
 }
-nav ul{
-    padding-right: 5%;
-}
-.active{
-    color: #f59f61;
-    font-weight: 700;
-}
+
 nav a:hover{
     font-size: 120%;
 }
 
+nav ul{
+    padding-right: 5%;
+}
+
+.active{
+    color: #f59f61;
+    font-weight: 700;
+}
+
+/* Home Page */
+
+#bio{
+    
+    height: auto;
+    border-style: solid;
+}
+
+#contact-form{
+    
+    min-height: 100px;
+    border-style: solid;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 234, 234);
+    background-color: #343232;
+    color: white;
+    background-color: #343232;
+    margin: 0 auto 20px auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px;
+}
+
+.contact-info{
+    width: 100%;
+    align-content: center;
+}
+
+.contact-info a{
+    text-decoration: none;
+    color: #f59f61;
+}
+
+.contact-info a:hover{
+    font-size: 120%;
+}
+
+.social-media{
+    font-size: large;
+    font-weight: 700;
+    width: 100%;
+    justify-content: center;
+}
+
+.social-media i{
+    color: white;
+    font-size: 180%;
+    margin:  1% 2%;
+    padding: 0 2%; 
+    
+}
+
+.social-media i:hover{
+    color: #f59f61;
+}
+
+.social-media li{
+    display: inline;
+}
+
+/* Media Queries for responsiveness */
 @media only screen and (min-width: 800px) {
     footer {
         flex-direction: row;
