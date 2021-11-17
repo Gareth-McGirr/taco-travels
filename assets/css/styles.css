@@ -11,11 +11,11 @@ body{
 header{
     
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    width: 100%;
-    background-color: rgb(236, 234, 234);
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    background-color: #343232;
     margin: 0 auto 20px auto;
-    max-height: 100px;
+    max-height: 150px;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
 }
@@ -37,6 +37,8 @@ footer{
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     background-color: rgb(236, 234, 234);
+    max-height: 150px;
+   
 }
 
 
@@ -57,14 +59,22 @@ footer{
 }
 
 #logo{
-    grid-column: 1/3;
+    grid-column: 1/2;
     padding-left: 20px;
-    font-size: 2rem;
+    max-height: 150px;
+    /* font-size: 2rem;
+    color: #f59f61;
+    font-weight: 600; */
 }
 
 nav {
     text-align: right;
-    grid-column: 3/3;
+    grid-column: 2/2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    
 }
 
 nav li{
@@ -72,13 +82,25 @@ nav li{
     height: 100%;
     margin: 0 20px;
     line-height: 60px;
-    font-size: 18px;
-    color: gray;
+    font-size: 22px;
+    
     cursor: pointer;
     transition: color .5s;
 }
-a{
+nav a{
     text-decoration: none;
+    color: white;
+}
+nav ul{
+    padding-right: 5%;
+}
+.active{
+    color: #f59f61;
+    /* text-decoration: underline; */
+    font-weight: 700;
+}
+nav a:hover{
+    font-size: 120%;
 }
 
 
