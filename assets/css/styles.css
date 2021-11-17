@@ -39,11 +39,21 @@ footer{
     background-color: rgb(236, 234, 234);
 }
 
-#contact-info{
+
+.contact-info{
     grid-column: 1/2;
 }
-#social-media{
+.social-media{
     grid-column: 3/4;
+    text-align: center;
+}
+.social-media li{
+    display: inline;
+}
+.social-media i{
+    font-size: 180%;
+    margin:  1% 2%;
+    padding: 0 5%;
 }
 
 #logo{
