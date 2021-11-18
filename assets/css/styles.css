@@ -16,6 +16,10 @@ body{
     text-align: center;
 }
 
+.container{
+    width: 95%;
+}
+
 /* Header, Logo and Nav Styling*/
 header{
     display: flex;
@@ -128,6 +132,29 @@ footer{
 
 .social-media li{
     display: inline;
+}
+
+.photo-gallery{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    grid-gap: 10px;
+
+}
+
+.pic{
+    position: relative;
+    height: 230px;
+    cursor: pointer;
+}
+
+.pic img{
+    max-width: 100%;
+    height: 100%;
+    
+    
 }
 
 /* Media Queries for responsiveness */
