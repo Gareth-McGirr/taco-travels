@@ -1,27 +1,25 @@
 /* Generic Styles */
-html{
+html {
     height: 100%;
 }
 
-ul{
-    list-style: none; 
+ul {
+    list-style: none;
     padding: 0;
 }
 
-body{
+body {
     min-height: 100%;
 }
-h1, h2, h3, h4, h5, h6{
-    color: #FFA500;
-}
-h1{
+
+h1 {
     font-weight: normal;
     font-size: 35px;
     position: relative;
     margin: 40px 0;
 }
 
-h1::before{
+h1::before {
     content: '';
     position: absolute;
     width: 100px;
@@ -34,13 +32,15 @@ h1::before{
 }
 
 @keyframes animate {
-    0%{
+    0% {
         width: 100px;
     }
-    50%{
+
+    50% {
         width: 200px;
     }
-    100%{
+
+    100% {
         width: 100px;
     }
 }
@@ -52,7 +52,7 @@ h1::before{
 
 
 /* Header, Logo and Nav Styling*/
-header{
+header {
     display: flex;
     width: 100%;
     background-color: #343232;
@@ -62,7 +62,7 @@ header{
     box-shadow: 3px 3px 5px;
 }
 
-#logo{
+#logo {
     padding-left: 20px;
     max-height: 150px;
 }
@@ -73,10 +73,10 @@ nav {
     align-items: center;
     width: 100%;
     justify-content: flex-end;
-    
+
 }
 
-nav li{
+nav li {
     display: block;
     height: 100%;
     margin: 0 20px;
@@ -86,17 +86,17 @@ nav li{
     transition: color .5s;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: white;
 }
 
-nav ul{
+nav ul {
     padding-right: 5%;
 }
 
-.active{
-    color:  #FFA500;
+.active {
+    color: #FFA500;
     font-weight: 700;
 }
 
@@ -104,36 +104,40 @@ nav ul{
 
 /* hero image */
 
-#hero-image{
+#hero-image {
     height: 600px;
     width: 100%;
-    background: url("../images/hero-image.jpg") no-repeat center center; 
+    background: url("../images/hero-image.jpg") no-repeat center center;
 }
 
-#bio{
-    
+#bio {
+
     height: auto;
     border-style: solid;
 }
 
 /* Contact form */
 
-#contact-form{
+#contact-form {
     border-radius: 5px;
     background-color: #eceaea;
     padding: 20px;
+    margin-bottom: 20px;
 }
 
 
-input[type=text], input[type=email], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical 
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
 }
 
 
@@ -153,16 +157,16 @@ button[type=submit] {
 
 
 
-.container{
+.container {
     width: 100%;
     text-align: center;
     margin: auto;
     border-radius: 5px;
-    
+
 }
 
 /* Footer */
-footer{
+footer {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -175,45 +179,107 @@ footer{
     box-shadow: 3px 3px 5px;
 }
 
-.contact-info{
+.contact-info {
     width: 100%;
     align-items: center;
 }
 
-.contact-info a{
+.contact-info a {
     text-decoration: none;
     color: #FFA500;
 }
 
-.contact-info a:hover{
+.contact-info a:hover {
     font-size: 120%;
 }
 
-.social-media{
+.social-media {
     font-size: large;
     font-weight: 700;
     width: 100%;
     justify-content: center;
 }
 
-.social-media i{
+.social-media i {
     color: white;
     font-size: 180%;
-    margin:  1% 2%;
-    padding: 0 2%; 
-    
+    margin: 1% 2%;
+    padding: 0 2%;
+
 }
 
-.social-media i:hover{
+.social-media i:hover {
     color: #FFA500;
 }
 
-.social-media li{
+.social-media li {
     display: inline;
 }
 
 
 /* Gallery Page */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.pic {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px lightgray;
+    width: 100%;
+    height: auto;
+    margin: 2px;
+}
+
+.pic img {
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+input.gallery-check {
+    display: none;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #ffa500;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 100px;
+    }
+
+    50% {
+        width: 200px;
+    }
+
+    100% {
+        width: 100px;
+    }
+}
+
 .photo-filter {
     background-color: rgb(236, 234, 234);
     width: 90%;
@@ -225,162 +291,206 @@ footer{
     box-shadow: 3px 3px 5px;
 }
 
-.photo-filter input{
+h2.gallery-heading {
     display: none;
 }
 
-.photo-filter label{
+label.gallery-label {
     display: inline-block;
     height: 100%;
-    margin: 0 20px;
+    margin: 0 10px;
     line-height: 60px;
-    font-size: 18px;
+    font-size: 16px;
     color: gray;
     cursor: pointer;
-    transition: color .5s;
+    transition: color 0.5s;
+}
 
+label:hover {
+    color: black;
 }
 
 .photo-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
+    display: contents;
+    align-items: center;
 }
 
-  /* Create four equal columns that sits next to each other */
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 ;
-}
-
-.column img {
-    
-    vertical-align: middle;
+.pic:before {
+    content: "Photo Gallery";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffa500;
+    font-size: 22px;
+    font-weight: bold;
     width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0.2s;
+    z-index: 1;
 }
 
-#check1:checked ~ .container .photo-gallery img{
+.ireland-pics,
+.scotland-pics,
+.bike-pics {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+
+#check1:checked~.container .photo-gallery .pic {
     opacity: 1;
     transform: scale(1);
     position: relative;
-    transition: .5s;
-
+    transition: 0.5s;
 }
-#check1:checked ~ .container .photo-filter .check1{
-    color: red;
+
+#check1:checked~.container .photo-filter .check1 {
+    color: #ffa500;
     font-weight: 700;
 }
 
-
-#check2:checked ~ .container .photo-gallery .donegal{
+#check2:checked~.container .photo-gallery .ireland-pics {
     transform: scale(1);
     opacity: 1;
     position: relative;
-    transition: .5s;
+    transition: 0.5s;
 }
-#check2:checked ~ .container .photo-filter .check2{
-    color: red;
+
+#check2:checked~.container .photo-filter .check2 {
+    color: #ffa500;
     font-weight: 700;
 }
 
-#check2:checked ~ .container .photo-gallery .scotland,
-.bikes{
+#check2:checked~.container .photo-gallery .scotland-pics,
+.bike-pics {
     opacity: 0;
     transform: scale(0);
     position: absolute;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-#check3:checked ~ .container .photo-gallery .scotland{
-    
+#check3:checked~.container .photo-gallery .scotland-pics {
     transform: scale(1);
     opacity: 1;
     position: relative;
-    transition: .5s;
+    transition: 0.5s;
 }
-#check3:checked ~ .container .photo-filter .check3{
-    color: red;
+
+#check3:checked~.container .photo-filter .check3 {
+    color: #ffa500;
     font-weight: 700;
 }
-#check3:checked ~ .container .photo-gallery .donegal,
-.bikes{
+
+#check3:checked~.container .photo-gallery .ireland-pics,
+.bike-pics {
     opacity: 0;
     transform: scale(0);
     position: absolute;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-#check4:checked ~ .container .photo-gallery .bikes{
-    
+#check4:checked~.container .photo-gallery .bike-pics {
     transform: scale(1);
     opacity: 1;
     position: relative;
-    transition: .5s;
+    transition: 0.5s;
 }
-#check4:checked ~ .container .photo-filter .check4{
-    color: red;
+
+#check4:checked~.container .photo-filter .check4 {
+    color: #ffa500;
     font-weight: 700;
 }
-#check4:checked ~ .container .photo-gallery .donegal,
-.scotland{
+
+#check4:checked~.container .photo-gallery .ireland-pics,
+.scotland-pics {
     opacity: 0;
     transform: scale(0);
     position: absolute;
-    transition: .5s;
+    transition: 0.5s;
 }
 
-  /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
+@media only screen and (min-width: 600px) {
+    label.gallery-label {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .pic {
+        max-width: 49%;
     }
 }
 
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-    flex: 100%;
-    max-width: 100%;
-    }
-}
 
 
 
 
 /* Media Queries for responsiveness */
-@media only screen and (min-width: 557px){
-    nav li{
+@media only screen and (min-width: 557px) {
+    nav li {
         display: inline-block;
     }
+
+    label.gallery-label {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .pic {
+        max-width: 49%;
+    }
+
 }
 
 @media only screen and (min-width: 800px) {
-    #contact-form{
+    #contact-form {
         width: 50%;
     }
 
-    #contact-form-section{
+    #contact-form-section {
         display: flex;
         justify-content: center;
     }
+
+    h2.gallery-heading {
+        display: block;
+        height: 100%;
+        background-color: rgb(212, 209, 209);
+        line-height: 60px;
+        padding: 0 50px;
+        color: #000;
+    }
+
+    .pic {
+        max-width: 24%;
+    }
+
     footer {
         flex-direction: row;
         max-height: 120px;
     }
+
     .social-media {
         width: 40%;
-        
+
     }
+
     .contact-info {
         width: 60%;
         text-align: left;
         padding-left: 2%;
         padding-top: 1%;
     }
-    
-    
-}
 
-/* Media Queries for gallery images responsive layout */
+
+}

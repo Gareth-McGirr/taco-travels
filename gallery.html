@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Gallery - Tacos Tavels</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
     <header>
         <a href="index.html">
@@ -22,11 +24,58 @@
                 </li>
                 <li>
                     <a href="gallery.html" class="active">Gallery</a>
-                </li>               
+                </li>
             </ul>
         </nav>
     </header>
-    <input type="radio" name="photos" id="check1" checked>
+    <main>
+        <input type="radio" name="photos" class="gallery-check" id="check1" checked>
+        <input type="radio" name="photos" class="gallery-check" id="check2">
+        <input type="radio" name="photos" class="gallery-check" id="check3">
+        <input type="radio" name="photos" class="gallery-check" id="check4">
+
+        <div class="container">
+            <h1>My Photo Gallery. </h1>
+            <div class="photo-filter">
+                <h2 class="gallery-heading">Photo Gallery</h2>
+                <label for="check1" class="check1 gallery-label">All Photos</label>
+                <label for="check2" class="check2 gallery-label">Ireland</label>
+                <label for="check3" class="check3 gallery-label">Scotland</label>
+                <label for="check4" class="check4 gallery-label">Bikes</label>
+            </div>
+            <div class="photo-gallery">
+                <div class="scotland-pics pic"><img src="assets/images/taco_rocket.jpg"></div>
+                <div class="bike-pics pic"><img src="assets/images/triuph_sprint_955.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/near_torr_head.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/antrim_glen2.jpg"></div>
+                <div class="bike-pics pic"><img src="assets/images/tiger_800.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/near_torr_head.jpg"></div>
+                <div class="scotland-pics pic"><img src="assets/images/scot2.jpg"></div>
+                <div class="bike-pics pic"><img src="assets/images/emma_vstrom.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/antrim_glen1.jpg"></div>
+                <div class="scotland-pics pic"><img src="assets/images/scot3.jpg"></div>
+                <div class="bike-pics pic"><img src="assets/images/red_trike_ballycastle.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/northwest200.jpg"></div>
+
+                <div class="scotland-pics pic"><img src="assets/images/scot4.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/coast_rd_1.jpg"></div>
+
+                <div class="scotland-pics pic"><img src="assets/images/scot5.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/glendowan_donegal.jpg"></div>
+
+                <div class="scotland-pics pic"><img src="assets/images/highlander_movie_castle.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/errigal_donegal.jpg"></div>
+
+                <div class="scotland-pics pic"><img src="assets/images/scot6.jpg"></div>
+                <div class="ireland-pics pic"><img src="assets/images/coast_rd2.jpg"></div>
+
+                
+                
+            </div>
+        </div>
+
+    </main>
+    <!-- <input type="radio" name="photos" id="check1" checked>
             <input type="radio" name="photos" id="check2">
             <input type="radio" name="photos" id="check3">
             <input type="radio" name="photos" id="check4">
@@ -86,7 +135,7 @@
                 <img class="scotland" src="assets/images/scotland3.jpg">
             </div>
         </div>
-    </div>
+    </div> -->
     <footer>
         <div class="contact-info text-center">
             <p>Phone: <a href="tel:01123456789">01 123 456 789</a></p>
@@ -96,21 +145,26 @@
             <p class="text-center">Follow me on Social Media</p>
             <ul class="text-center">
                 <li>
-                    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Visit my Facebook page (open in a new tab)"><i class="fab fa-facebook"></i></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener"
+                        aria-label="Visit my Facebook page (open in a new tab)"><i class="fab fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Visit my instagram page (opens in a new tab"><i class="fab fa-instagram"></i></a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener"
+                        aria-label="Visit my instagram page (opens in a new tab"><i class="fab fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Visit my twitter page (opens in a new tab"><i class="fab fa-twitter"></i></a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener"
+                        aria-label="Visit my twitter page (opens in a new tab"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li>
-                    <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="Visit my youtube channel (opens in a new tab"><i class="fab fa-youtube"></i></a>
+                    <a href="https://youtube.com" target="_blank" rel="noopener"
+                        aria-label="Visit my youtube channel (opens in a new tab"><i class="fab fa-youtube"></i></a>
                 </li>
             </ul>
         </div>
     </footer>
     <!-- font awsome script -->
-    <script src="https://kit.fontawesome.com/58cc89d8c4.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/58cc89d8c4.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
