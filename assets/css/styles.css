@@ -11,14 +11,45 @@ ul{
 body{
     min-height: 100%;
 }
+h1, h2, h3, h4, h5, h6{
+    color: #FFA500;
+}
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+}
+
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: #FFA500;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
 
 .text-center {
     text-align: center;
 }
 
-.container{
-    width: 95%;
-}
+
 
 /* Header, Logo and Nav Styling*/
 header{
@@ -71,16 +102,63 @@ nav ul{
 
 /* Home Page */
 
+/* hero image */
+
+#hero-image{
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.jpg") no-repeat center center; 
+}
+
 #bio{
     
     height: auto;
     border-style: solid;
 }
 
+/* Contact form */
+
 #contact-form{
+    border-radius: 5px;
+    background-color: #eceaea;
+    padding: 20px;
+}
+
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+
+button[type=submit] {
+    background-color: white;
+    padding: 12px 20px;
+    border: solid;
+    border-style: groove;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.container{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
     
-    min-height: 100px;
-    border-style: solid;
 }
 
 /* Footer */
@@ -136,41 +214,137 @@ footer{
 
 
 /* Gallery Page */
+.photo-filter {
+    background-color: rgb(236, 234, 234);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px;
+}
+
+.photo-filter input{
+    display: none;
+}
+
+.photo-filter label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: gray;
+    cursor: pointer;
+    transition: color .5s;
+
+}
 
 .photo-gallery {
     display: flex;
     flex-wrap: wrap;
     padding: 0;
-  }
-  
+}
+
   /* Create four equal columns that sits next to each other */
-  .column {
+.column {
     flex: 25%;
     max-width: 25%;
     padding: 0 ;
-  }
-  
-  .column img {
+}
+
+.column img {
     
     vertical-align: middle;
     width: 100%;
-  }
-  
+}
+
+#check1:checked ~ .container .photo-gallery img{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;
+
+}
+#check1:checked ~ .container .photo-filter .check1{
+    color: red;
+    font-weight: 700;
+}
+
+
+#check2:checked ~ .container .photo-gallery .donegal{
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check2:checked ~ .container .photo-filter .check2{
+    color: red;
+    font-weight: 700;
+}
+
+#check2:checked ~ .container .photo-gallery .scotland,
+.bikes{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#check3:checked ~ .container .photo-gallery .scotland{
+    
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check3:checked ~ .container .photo-filter .check3{
+    color: red;
+    font-weight: 700;
+}
+#check3:checked ~ .container .photo-gallery .donegal,
+.bikes{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
+#check4:checked ~ .container .photo-gallery .bikes{
+    
+    transform: scale(1);
+    opacity: 1;
+    position: relative;
+    transition: .5s;
+}
+#check4:checked ~ .container .photo-filter .check4{
+    color: red;
+    font-weight: 700;
+}
+#check4:checked ~ .container .photo-gallery .donegal,
+.scotland{
+    opacity: 0;
+    transform: scale(0);
+    position: absolute;
+    transition: .5s;
+}
+
   /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .column {
-      flex: 50%;
-      max-width: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
-  }
-  
+}
+
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .column {
-      flex: 100%;
-      max-width: 100%;
+    flex: 100%;
+    max-width: 100%;
     }
-  }
+}
 
 
 
@@ -183,6 +357,14 @@ footer{
 }
 
 @media only screen and (min-width: 800px) {
+    #contact-form{
+        width: 50%;
+    }
+
+    #contact-form-section{
+        display: flex;
+        justify-content: center;
+    }
     footer {
         flex-direction: row;
         max-height: 120px;
