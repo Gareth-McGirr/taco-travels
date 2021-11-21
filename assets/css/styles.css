@@ -157,7 +157,49 @@ button:hover {
 }
 
 
+/* advetures page */
 
+#adventure-main input {
+    display: none;    
+}
+
+
+input:checked + label + .content{
+    display: none; 
+}
+
+#adventure-main label {
+    display: block;    
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background: grey;
+    border-radius: 3px;
+    color: #FFF;
+    transition: ease .5s;
+    text-align: center;
+}
+
+#adventure-main label:hover {
+    color: #FFA500;
+}
+
+#adventure-main .content {
+    
+    
+    border: 1px solid #A7A7A7;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+}
+
+#adventure-main img{
+    height: auto;
+    width: 100%;
+}
+
+#adventure-main .content p {
+    padding: 0 5px;
+}
 
 
 
@@ -428,9 +470,21 @@ label.gallery-label {
     .container {
         flex-direction: row;
     }
+    
 
     .pic {
         max-width: 49%;
+    }
+    .content {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    #adventure-main img {
+        width: 50%;
+    }
+    #adventure-main .content p {
+        width: 50%;
     }
 }
 
