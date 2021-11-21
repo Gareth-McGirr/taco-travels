@@ -104,10 +104,10 @@ nav ul {
 
 /* hero image */
 
-#hero-image {
-    height: 600px;
+#hero-image img{
+    height: auto;
     width: 100%;
-    background: url("../images/hero-image.jpg") no-repeat center center;
+    
 }
 
 #bio {
@@ -120,9 +120,10 @@ nav ul {
 
 #contact-form {
     border-radius: 5px;
-    background-color: #eceaea;
+    background-color: #343232;
     padding: 20px;
     margin-bottom: 20px;
+    color: white;
 }
 
 
@@ -141,7 +142,7 @@ textarea {
 }
 
 
-button[type=submit] {
+.contact-form button[type=submit] {
     background-color: white;
     padding: 12px 20px;
     border: solid;
@@ -149,6 +150,12 @@ button[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
+button:hover {
+    
+    color: #FFA500;
+}
+
 
 
 
@@ -306,7 +313,7 @@ label.gallery-label {
     transition: color 0.5s;
 }
 
-label:hover {
+.photo-filter label:hover {
     color: black;
 }
 
