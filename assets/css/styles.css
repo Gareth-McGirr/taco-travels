@@ -214,6 +214,7 @@ input:checked + label + .content{
 
 
 
+
 .container {
     width: 100%;
     text-align: center;
@@ -496,6 +497,11 @@ label.gallery-label {
     }
     #adventure-main .content p {
         width: 50%;
+    }
+    .adventure-images {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
     }
 }
 
