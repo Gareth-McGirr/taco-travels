@@ -31,6 +31,7 @@ h1::before {
     animation: animate 4s linear infinite;
 }
 
+
 @keyframes animate {
     0% {
         width: 100px;
@@ -142,7 +143,7 @@ textarea {
 }
 
 
-.contact-form button[type=submit] {
+#contact-form button[type=submit] {
     background-color: white;
     padding: 12px 20px;
     border: solid;
@@ -156,9 +157,16 @@ button:hover {
     color: #FFA500;
 }
 
+#contact-form h2 {
+    color: #FFA500;
 
-/* advetures page */
+}
 
+
+/* adventures page */
+#adventure-main {
+    padding-bottom: 20px;
+}
 #adventure-main input {
     display: none;    
 }
@@ -173,7 +181,7 @@ input:checked + label + .content{
     padding: 8px 22px;
     margin: 0 0 1px 0;
     cursor: pointer;
-    background: grey;
+    background: #363534;
     border-radius: 3px;
     color: #FFF;
     transition: ease .5s;
@@ -219,7 +227,6 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgb(236, 234, 234);
     background-color: #343232;
     color: white;
     background-color: #343232;
@@ -247,6 +254,10 @@ footer {
     font-weight: 700;
     width: 100%;
     justify-content: center;
+}
+
+.social-media p {
+    color: #ffa500;
 }
 
 .social-media i {
@@ -330,7 +341,7 @@ h1::before {
 }
 
 .photo-filter {
-    background-color: rgb(236, 234, 234);
+    background-color: #343232;
     width: 90%;
     margin: 0 auto 20px auto;
     height: 60px;
@@ -350,13 +361,13 @@ label.gallery-label {
     margin: 0 10px;
     line-height: 60px;
     font-size: 16px;
-    color: gray;
+    color: white;
     cursor: pointer;
     transition: color 0.5s;
 }
 
 .photo-filter label:hover {
-    color: black;
+    color: #FFA500;
 }
 
 .photo-gallery {
