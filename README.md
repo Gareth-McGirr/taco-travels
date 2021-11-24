@@ -17,7 +17,7 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
     * This will provide an image in the the tabs header to allow the user to easily identify the website if they have multiple tabs open.
 * 404 Page
     * A 404 page will be implemented and will display if a user navigates to a broken link.
-    * The 404 page will allow the user to easily navigate back to the main website if they direct to a broken link / missing page, without the need of the browsers back button.
+    * The 404 page will allow the user to easily navigate back to the main website if they direct to a broken link / missing page, without the need  of the browsers back button.
 
 ### Landing Page
 * Landing page image
@@ -38,7 +38,7 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
 
 ### Gallery Page
 * Gallery
-    * The gallery will provide the user with photos of 'Taco's Motorcycle adventures from various trips and charity events. The gallery will be fully responsive on all devices and allows the user to filter by categories provided in a sub navigation.
+    * The gallery will provide the user with photos of 'Taco's Motorcycle adventures from various trips and charity events. The gallery will be fully     responsive on all devices and allows the user to filter by categories provided in a sub navigation.
     * This will allow users that are interested in 'Taco's Travels to filter items based on the category they wish to be displayed. As the gallery is responsive it will allow the user to view content from any device. 
 
 ### Adventures
@@ -55,6 +55,27 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
 
 
 ### Features Left to Implement
+
+##Technologies
+
+* HTML
+    * The structure of the Website was developed using HTML as the main language.
+* CSS
+    * The Website was styled using custom CSS in an external file.
+* Visual Studio Code
+    * The website was developed using Visual Studio Code IDE
+* GitHub
+    * Source code is hosted on GitHub and delpoyed using Git Pages.
+* Git 
+    * Used to commit and push code during the development opf the Website
+* Font Awesome
+    * Icons obtained from https://fontawesome.com/ were used as the Social media links in the footer section. 
+* Tinyjpg
+    * https://tinyjpg.com/ was used to reduce the size of the images used throughout the website
+* Favicon.io
+    * favicon files were created at https://favicon.io/favicon-converter/ 
+
+
 
 
 
@@ -86,6 +107,10 @@ The live link can be found here - https://gareth-mcgirr.github.io/tacos-travels/
 
 ## Credits 
 
+* https://supfort.com/pure-css-accordion-without-javascript
+    * Code was used from this site to create the accordian effect on the adventures page sections for the hidden sections for each days travels. Styles were changed to suit styling on my Website.
+* https://www.youtube.com/watch?v=U-CujW5OlW0
+    * Gallery page was created with inspiration from this video. I adapted code to use flexbox rather than css grid to make the page responsive on every device. 
 
 
 ### Content 
