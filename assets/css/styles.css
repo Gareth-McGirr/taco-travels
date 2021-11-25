@@ -223,12 +223,6 @@ input:checked + label + .content{
     padding: 5px;
 }
 
-
-
-
-
-
-
 .container {
     width: 100%;
     text-align: center;
@@ -257,6 +251,10 @@ footer {
 
 .contact-info a {
     text-decoration: none; /* remove underline from phone number and email clickable links */
+    color: #fff;
+}
+
+.contact-info a:hover {
     color: #FFA500;
 }
 
