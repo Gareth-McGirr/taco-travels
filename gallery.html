@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Tacos Tavels</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- required links to display favicon in browser tabs -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -15,6 +16,7 @@
 
 <body>
     <header>
+        <!-- Site logo as a clickable link to home page from any page on the site-->
         <a href="index.html">
             <img src="assets/images/logo.gif" alt="Tacos Travels Logo" id="logo">
         </a>
@@ -34,6 +36,7 @@
     </header>
 
     <main>
+        <!-- radio buttons to select what photos will be visible to the user based on selection. -->
         <input type="radio" name="photos" class="gallery-check" id="check1" checked>
         <input type="radio" name="photos" class="gallery-check" id="check2">
         <input type="radio" name="photos" class="gallery-check" id="check3">
@@ -49,6 +52,10 @@
                 <label for="check4" class="check4 gallery-label">Bikes</label>
             </div>
             <div class="photo-gallery">
+                <!-- 
+                individual images wrapped in a div as responsive design to display on different size screens. 
+                Each div given a class to allow display of photos to be filtered and hidden based on which radio button is checked 
+                -->
                 <div class="scotland-pics pic"><img src="assets/images/taco_rocket.jpg"></div>
                 <div class="bike-pics pic"><img src="assets/images/triuph_sprint_955.jpg"></div>
                 <div class="ireland-pics pic"><img src="assets/images/near_torr_head.jpg"></div>
@@ -75,11 +82,13 @@
 
     <footer>
         <div class="contact-info text-center">
+            <!-- clickable links that will open phone or email window for user  -->
             <p>Phone: <a href="tel:01123456789">01 123 456 789</a></p>
             <p>Email: <a href="mailto:taco@gmail.com">taco@gmail.com</a></p>
         </div>
         <div class="social-media">
             <p class="text-center">Follow me on Social Media</p>
+            <!--font awesome icons as the clickable links to social media sites. Links open in a new tab -->
             <ul class="text-center">
                 <li>
                     <a href="https://facebook.com" target="_blank" rel="noopener"

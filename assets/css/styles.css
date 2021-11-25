@@ -1,8 +1,10 @@
 /* Generic Styles */
+
 html {
     height: 100%;
 }
 
+/* hide bullet styling from all list items throughout site */
 ul {
     list-style: none;
     padding: 0;
@@ -16,9 +18,10 @@ h1 {
     font-weight: normal;
     font-size: 35px;
     position: relative;
-    margin: 40px 0;
+    margin: 40px 0; /* add space to top and bottom of h1 headings  */
 }
 
+/* styling to animate an expanding line underneath main headings  */
 h1::before {
     content: '';
     position: absolute;
@@ -46,6 +49,7 @@ h1::before {
     }
 }
 
+/* class that can be added to html throughout site where text should be centered */
 .text-center {
     text-align: center;
 }
@@ -63,22 +67,25 @@ header {
     box-shadow: 3px 3px 5px;
 }
 
+/* padding added to push logo in from edge of screen */
 #logo {
     padding-left: 20px;
     max-height: 150px;
 }
 
+/* push links to right of header and center from top to bottom */
 nav {
     text-align: right;
-    display: flex;
+    display: flex; /* make responsive on different screen sizes */
     align-items: center;
     width: 100%;
     justify-content: flex-end;
 
 }
 
+
 nav li {
-    display: block;
+    display: block; /* list of links displayed on top of each other as default on small screen*/ 
     height: 100%;
     margin: 0 20px;
     line-height: 40px;
@@ -96,6 +103,7 @@ nav ul {
     padding-right: 5%;
 }
 
+/* add different color and increased font weight to nav link for the page that user is currently viewing */
 .active {
     color: #FFA500;
     font-weight: 700;
@@ -105,8 +113,9 @@ nav ul {
 
 /* hero image */
 
+/* responsive sizing of image on different screen sizes to keep aspect ratio */
 #hero-image img{
-    height: auto;
+    height: auto;  
     width: 100%;
     
 }
@@ -119,15 +128,16 @@ nav ul {
 
 /* Contact form */
 
+/* styled to match footer and header colors */
 #contact-form {
     border-radius: 5px;
     background-color: #343232;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* margin added to push form position up footer */
     color: white;
 }
 
-
+/* styling for form elements */
 input[type=text],
 input[type=email],
 select,
@@ -143,6 +153,7 @@ textarea {
 }
 
 
+/* styled to give 3d effect on contact form submit button */
 #contact-form button[type=submit] {
     background-color: white;
     padding: 12px 20px;
@@ -152,6 +163,7 @@ textarea {
     cursor: pointer;
 }
 
+/* apply different color when hovered over with mouse */
 button:hover {
     
     color: #FFA500;
@@ -165,17 +177,18 @@ button:hover {
 
 /* adventures page */
 #adventure-main {
-    padding-bottom: 20px;
+    padding-bottom: 20px; /* push main content of adventure page up so not touching the footer */
 }
 #adventure-main input {
     display: none;    
 }
 
-
+/* hide content sections on adventures page as default. Checkboxes are ticked as default and unticked when user clicks on the labels  */
 input:checked + label + .content{
     display: none; 
 }
 
+/* labels for checkboxes styled as buttons  */
 #adventure-main label {
     display: block;    
     padding: 8px 22px;
@@ -188,25 +201,26 @@ input:checked + label + .content{
     text-align: center;
 }
 
+/* create hover effect to show user that labels are clickable */
 #adventure-main label:hover {
     color: #FFA500;
 }
 
-#adventure-main .content {
-    
-    
+#adventure-main .content {    
     border: 1px solid #A7A7A7;
     margin: 0 0 1px 0;
     border-radius: 3px;
 }
 
+
 #adventure-main img{
-    height: auto;
-    width: 100%;
+    height: auto; /* height set to auto so images are responsive and aspect is maintained on different size screens */
+    width: 100%; /* image will take up full width of screen as default */
 }
 
+/* add padding to keep text from edge of screen */
 #adventure-main .content p {
-    padding: 0 5px;
+    padding: 5px;
 }
 
 
@@ -227,7 +241,7 @@ input:checked + label + .content{
 footer {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     background-color: #343232;
     color: white;
     background-color: #343232;
@@ -237,19 +251,16 @@ footer {
 }
 
 .contact-info {
-    width: 100%;
+    width: 100%; /* display full width as default on small screens */
     align-items: center;
 }
 
 .contact-info a {
-    text-decoration: none;
+    text-decoration: none; /* remove underline from phone number and email clickable links */
     color: #FFA500;
 }
 
-.contact-info a:hover {
-    font-size: 120%;
-}
-
+ /* centered top to bottom in footer */
 .social-media {
     font-size: large;
     font-weight: 700;
@@ -261,6 +272,7 @@ footer {
     color: #ffa500;
 }
 
+/* increase size of icons in footer and add some spacing inbween each icon */
 .social-media i {
     color: white;
     font-size: 180%;
@@ -269,10 +281,12 @@ footer {
 
 }
 
+/* change color of icons when mouse hover over them */
 .social-media i:hover {
     color: #FFA500;
 }
 
+/* display icons side by side in footer  */
 .social-media li {
     display: inline;
 }
@@ -281,8 +295,8 @@ footer {
 /* Gallery Page */
 .container {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: column; /* display images on top of each other as default */
+    flex-wrap: wrap; /* wrapped so images are responsive on different size screens and when images are filtered by class */
     width: 100%;
     text-align: center;
     justify-content: center;
@@ -293,8 +307,8 @@ footer {
     border-radius: 10px;
     box-shadow: 2px 2px 4px lightgray;
     width: 100%;
-    height: auto;
-    margin: 2px;
+    height: auto; /* set to auto so images keep aspect ratio on different size screens */
+    margin: 2px; /* give a bit of space between images */
 }
 
 .pic img {
@@ -305,7 +319,7 @@ footer {
 }
 
 input.gallery-check {
-    display: none;
+    display: none; /* hide the radio buttons so only labels are displayed for better look and feel*/
 }
 
 h1 {
@@ -324,9 +338,10 @@ h1::before {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    animation: animate 4s linear infinite;
+    animation: animate 4s linear infinite; /* animation timing */
 }
 
+/* increase and decrease the size of the line underneath the h1 headings as part of animation above */
 @keyframes animate {
     0% {
         width: 100px;
@@ -341,6 +356,7 @@ h1::before {
     }
 }
 
+/* styled the photo filter to match site styling */
 .photo-filter {
     background-color: #343232;
     width: 90%;
@@ -352,10 +368,12 @@ h1::before {
     box-shadow: 3px 3px 5px;
 }
 
+/* hide the first part of photo filter as default on small screens */
 h2.gallery-heading {
     display: none;
 }
 
+/* styling for photo filter */
 label.gallery-label {
     display: inline-block;
     height: 100%;
@@ -368,7 +386,7 @@ label.gallery-label {
 }
 
 .photo-filter label:hover {
-    color: #FFA500;
+    color: #FFA500; /* change color on hover to match site design to show user that element is clickable */
 }
 
 .photo-gallery {
@@ -400,6 +418,7 @@ label.gallery-label {
     justify-content: center;
     display: inline-flex;
 }
+
 
 #check1:checked~.container .photo-gallery .pic {
     opacity: 1;
