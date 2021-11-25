@@ -52,11 +52,9 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
 
 ### Existing Features
 
-
-
 ### Features Left to Implement
 
-##Technologies
+## Technologies
 
 * HTML
     * The structure of the Website was developed using HTML as the main language.
