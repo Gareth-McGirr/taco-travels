@@ -490,6 +490,17 @@ label.gallery-label {
     transition: 0.5s;
 }
 
+/* 404 Page */
+
+.return-to-home a {
+    font-size: 2rem;
+    color: #000;
+}
+
+.return-to-home a:hover {
+    color: #ffa500;
+}
+
 @media only screen and (min-width: 600px) {
     label.gallery-label {
         margin: 0 20px;
