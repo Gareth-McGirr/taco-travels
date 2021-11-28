@@ -111,6 +111,22 @@ nav ul {
 
 /* Home Page */
 
+.about-me {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me .profile-pic{
+    width: 100%;
+}
+
+.about-me-flex{
+    width: 100%;
+}
+
 /* hero image */
 
 /* responsive sizing of image on different screen sizes to keep aspect ratio */
@@ -120,10 +136,9 @@ nav ul {
     
 }
 
-#bio {
-
+.profile-pic img{
     height: auto;
-    border-style: solid;
+    width: 100%;
 }
 
 /* Contact form */
@@ -598,5 +613,20 @@ label.gallery-label {
         padding-top: 1%;
     }
 
-
+    .about-me .profile-pic{
+        height: auto;
+        width: 45%;
+        
+    }
+    .profile-pic img{
+        height: auto;
+        width: 100%;
+    }
+    .about-me{
+        flex-direction: row;
+    }
+    .about-me-flex{
+        padding: 10px;
+        width: 50%;
+    }
 }
