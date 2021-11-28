@@ -4,6 +4,10 @@ html {
     height: 100%;
 }
 
+main {
+    flex: 1 0 auto;
+}
+
 /* hide bullet styling from all list items throughout site */
 ul {
     list-style: none;
@@ -12,6 +16,8 @@ ul {
 
 body {
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -257,6 +263,7 @@ footer {
     margin: 0 auto 20px auto;
     border-radius: 5px;
     box-shadow: 3px 3px 5px;
+    flex-shrink: 0;
 }
 
 .contact-info {
@@ -516,7 +523,7 @@ label.gallery-label {
     color: #ffa500;
 }
 
-/* Media Queries for responsiveness */
+
 
 @media only screen and (min-width: 600px) {
     label.gallery-label {
@@ -605,7 +612,7 @@ label.gallery-label {
 
     .about-me .profile-pic{
         height: auto;
-        width: 45%;
+        width: 47%;
         
     }
     .profile-pic img{
@@ -616,7 +623,7 @@ label.gallery-label {
         flex-direction: row;
     }
     .about-me-flex{
-        padding: 10px;
+        padding-left: 15px;
         width: 50%;
     }
 }
