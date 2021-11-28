@@ -154,6 +154,7 @@ nav ul {
 
 /* styled to match footer and header colors */
 #contact-form {
+    margin-top: 50px;
     border-radius: 5px;
     background-color: #343232;
     padding: 20px;
@@ -593,19 +594,20 @@ label.gallery-label {
 
     .about-me .profile-pic{
         height: auto;
-        width: 47%;
+        width: 25%;
         
     }
     .profile-pic img{
         height: auto;
         width: 100%;
+        border-radius: 50%;
     }
     .about-me{
         flex-direction: row;
     }
     .about-me-flex{
         padding-left: 15px;
-        width: 50%;
+        width: 70%;
     }
 
     .adventure-images {
