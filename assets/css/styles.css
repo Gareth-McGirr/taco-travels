@@ -526,21 +526,24 @@ label.gallery-label {
         flex-direction: row;
     }
     
-
     .pic {
         max-width: 49%;
     }
+
     .content {
         display: flex;
         width: 100%;
         flex-direction: row;
     }
+
     #adventure-main img {
         width: 50%;
     }
+
     #adventure-main .content p {
         width: 50%;
     }
+    
     .adventure-images {
         display: flex;
         flex-direction: row;
@@ -555,9 +558,6 @@ label.gallery-label {
         margin: 0 20px;
         font-size: 18px;
     }
-
-    
-
     
 }
 
