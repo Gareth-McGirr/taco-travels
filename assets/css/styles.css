@@ -546,6 +546,19 @@ label.gallery-label {
         flex-direction: row;
         margin-bottom: 5px;
     }
+
+    nav li {
+        display: inline-block;
+    }
+
+    label.gallery-label {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    
+
+    
 }
 
 
