@@ -10,6 +10,17 @@ main {
     flex: 1 0 auto;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FFA500;
+}
+
 /* hide bullet styling from all list items throughout site */
 ul {
     list-style: none;
