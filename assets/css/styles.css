@@ -516,6 +516,8 @@ label.gallery-label {
     color: #ffa500;
 }
 
+/* Media Queries for responsiveness */
+
 @media only screen and (min-width: 600px) {
     label.gallery-label {
         margin: 0 20px;
@@ -543,7 +545,7 @@ label.gallery-label {
     #adventure-main .content p {
         width: 50%;
     }
-    
+
     .adventure-images {
         display: flex;
         flex-direction: row;
@@ -559,31 +561,6 @@ label.gallery-label {
         font-size: 18px;
     }
     
-}
-
-
-
-
-
-/* Media Queries for responsiveness */
-@media only screen and (min-width: 557px) {
-    nav li {
-        display: inline-block;
-    }
-
-    label.gallery-label {
-        margin: 0 20px;
-        font-size: 18px;
-    }
-
-    .container {
-        flex-direction: row;
-    }
-
-    .pic {
-        max-width: 49%;
-    }
-
 }
 
 @media only screen and (min-width: 800px) {
