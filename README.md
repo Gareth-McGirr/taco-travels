@@ -91,27 +91,32 @@ Home page
 <br><br>
 
 ![Home Page large screen](docs/readme_images/home_wireframe.JPG)
+
 ![Home Page small screen](docs/readme_images/home_mobile_wireframe.JPG)
 <br><br>
 Contact form successful submission page.
 <br><br>
 ![Contact form submission success](docs/readme_images/contact_wireframe.JPG)
+
 ![Contact form submission success](docs/readme_images/contact_mobile_wireframe.JPG)
 
 
 Adventures page
 <br><br>
 ![Adventures page large screen](docs/readme_images/adventures_wireframe.JPG)
+
 ![Adventures page small screen](docs/readme_images/adventures_mobile_wireframe.JPG)
 
 Gallery page
 <br><br>
 ![Gallery page large screen](docs/readme_images/gallery_wireframe.JPG)
+
 ![Gallery page small screen](docs/readme_images/gallery_mobile.JPG)
 
 404 page
 <br><br>
 ![Gallery page large screen](docs/readme_images/404_wireframe.JPG)
+
 ![Gallery page small screen](docs/readme_images/404_mobile_wireframe.JPG)
 <br><br><br><br>
 
