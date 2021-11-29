@@ -160,7 +160,7 @@ No elements overlap.
 
 Actual:
 
-Website behaved as expected.
+Website behaved as expected with the exception of switching to landscape view in Mozilla Firefox. Details can be found in [Unfixed Bugs](#Unfixed-Bugs)
 
 Website was also opened on the following devices and no responsive issues were seen:
 
@@ -353,11 +353,24 @@ Behavior was as expected and my outlook application was opened ready to send an 
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+
+![Contact HTML Validator Results](docs/testing/contact_validator.JPG)
+
+![Avdentures HTML Validator Results](docs/testing/adventures_validator.JPG)
+
+![Home HTML Validator Results](docs/testing/home_validator.JPG)
+
+![Gallery HTML Validator Results](docs/testing/gallery_validator.JPG)
+
+![404 HTML Validator Results](docs/testing/404_validator.JPG)
+
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org)
 
-### Unfixed Bugs
+![CSS Validator Results](docs/testing/css_validator.JPG)
 
+### Unfixed Bugs
+Responsiveness of the website worked on all devices, screen sizes and orientation with the exception of landscape orientation on mozilla firefox. I was unable to resolve this bug on time but will address in a future release.
 
 ## Deployment
 
