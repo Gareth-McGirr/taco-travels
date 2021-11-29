@@ -197,6 +197,14 @@ Fix: I could not find a way to fix this issue with html and css alone so a tabin
 
 Issue #2: After keyboard controls were implemented, while testing the site with windows 'Narrator' screenreader, it was not clearly known what the purpose of the labels/checkboxes were. An aria-label label was added to the labels for screen readers to alert them that the labels were clickable and what their purpose was.
 
+### Lighthouse Testing
+
+![Home](docs/testing/index_lighthouse.JPG)
+
+![Gallery](docs/testing/gallery_lighthouse.JPG)
+
+![Adventures](docs/testing/adventures_lighthouse.JPG)
+
 ### Functional Testing
 
 **Navigation Links**
