@@ -2,6 +2,7 @@
 
 Tacos Travels is a website that allows users to follow Hair O' The Dog club member 'Taco' on his various adventures on his motorbike. These adventures range from day trips, charity events, weekends away and cross country adventures. The website also aims to provide information on the vital services provided by the Blood Bikes charity in which Taco used to volunteer for as an emergency rider.
 
+![Mockup](docs/readme_images/mockup.JPG)
 
 ## Features 
 
