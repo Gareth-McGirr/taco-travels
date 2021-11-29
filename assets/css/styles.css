@@ -264,7 +264,7 @@ input:checked + label + .content{
     text-align: center;
     margin: auto;
     border-radius: 5px;
-
+    margin-bottom: 50px;
 }
 
 /* Footer */
