@@ -37,6 +37,8 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
     * Information about 'Taco' and the websites purpose including an image of 'Taco' on his travels.
     * This information lets the user know what the site is about. 
 
+![Bio](docs/readme_images/about_me.JPG)
+
 * Contact form
     * A contact form will be implemented to allow users to contact 'Taco'. The form will consist of the following fields and attributes: 
         * Full Name (required, max length 50, type=text)
