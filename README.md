@@ -70,7 +70,17 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
 ![Details Dropdown](docs/readme_images/details_dropdown.JPG)
 ### Existing Features
 
+* Responsive design
+* Hidden interactive sections on adventure page
+* Responsive gallery with filtering
+* Contact form and success page
+* 3 Adventure trips and information
+
 ### Features Left to Implement
+
+* As a future enhancement, the contact form will be updated with javascript to send an email to Taco with the contact information.
+
+* Google map interaction to be added to the Adventures page instead of screen shots of the map.
 
 ## Technologies
 
