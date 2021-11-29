@@ -83,6 +83,16 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
 
 * Google map interaction to be added to the Adventures page instead of screen shots of the map.
 
+## Design
+
+### Wireframes
+
+
+Home page
+
+![Home Page large screen](docs/readme_images/home_wireframe.JPG)
+
+
 ## Technologies
 
 * HTML
