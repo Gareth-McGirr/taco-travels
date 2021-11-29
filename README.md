@@ -323,7 +323,6 @@ Behavior was as expected and my outlook application was opened ready to send an 
 ### Unfixed Bugs
 
 
-
 ## Deployment
 
 ### Version Control
@@ -363,16 +362,18 @@ The project will now of been cloned on your local machine for use.
 
 ## Credits 
 
-* https://supfort.com/pure-css-accordion-without-javascript
+* [Accordion without javascript](https://supfort.com/pure-css-accordion-without-javascript)
     * Code was used from this site to create the accordian effect on the adventures page sections for the hidden sections for each days travels. Styles were changed to suit styling on my Website.
-* https://www.youtube.com/watch?v=U-CujW5OlW0
+* [Youtube Gallery Filter Tutorial](https://www.youtube.com/watch?v=U-CujW5OlW0)
     * Gallery page was created with inspiration from this video. I adapted code to use flexbox rather than css grid to make the page responsive on every device. 
 
 
 ### Content 
 
+All content with the exception of those listed in the Media section of this document was owned by Hair O'The Dog club members Rocket and Taco. Permission was granted from Rocket to use the images.
 
 ### Media
 
+Website Logo was created by my wife [Daisy McGirr](https://github.com/Daisy-McG) using Canva.
 
-
+Maps on the adventure page were from google maps timeline.
