@@ -42,9 +42,9 @@ Tacos Travels is a website that allows users to follow Hair O' The Dog club memb
 
 * Contact form
     * A contact form will be implemented to allow users to contact 'Taco'. The form will consist of the following fields and attributes: 
-        * Full Name (required, max length 50, type=text)
+        * First Name (required, type=text)
+        * Last Name (required, type=text)
         * Email (required, type=email)
-        * Phone number (optional, type=tel) 
         * Message (required, type=textarea)
     * On successful submission of the contact form, the user will be navigated to contact.html displaying a success message.
     * This will allow user to contact 'Taco' if they have any queiries about travel destinations, charity events, club information or maybe to join him on some of his travels. 
@@ -134,6 +134,9 @@ Gallery page
     * https://tinyjpg.com/ was used to reduce the size of the images used throughout the website
 * Favicon.io
     * favicon files were created at https://favicon.io/favicon-converter/ 
+* balsamiq
+    * wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
+
 
 ## Testing 
 
